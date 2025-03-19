@@ -14,6 +14,8 @@ public class ActionListenerEvent implements ActionListener{
 			ev.jogar();
 		}else if (e.getSource() ==  MainWindow.btnSair) {
 			ev.sair();
+		}else if (e.getSource() == MainWindow.btnComfirm) {
+			ev.comfirme();
 		}
 	}
 }

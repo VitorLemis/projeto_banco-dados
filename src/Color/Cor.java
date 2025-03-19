@@ -3,7 +3,8 @@ import java.awt.Color;
 
 public enum Cor {
 	WHITE(Color.WHITE),
-	BLACK(Color.BLACK);
+	BLACK(Color.BLACK),
+	RED(Color.RED);
 	
 	private final Color cor;
 	Cor(Color cor) {
