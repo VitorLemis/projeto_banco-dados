@@ -24,7 +24,8 @@ public class Eventos {
 	}
 	protected void comfirme() {
 		if (verificar.aprovardoIdade && verificar.aprovardoNome) {
-			conexao.conexaoJDBC();
+			dadosUser.setNome(MainWindow.fieldCadastrarNome.getText());
+			dadosUser.setIdade(Integer.parseInt(MainWindow.FieldCadastrarIdade.getText()));
 		}else {
 			JOptionPane.showMessageDialog(null, "Dados Invaliados !");
 		}
