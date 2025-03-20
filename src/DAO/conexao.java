@@ -4,7 +4,7 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 
 public class conexao {
-	private static String url = "jdbc:mysql://localhost:3306/teste";
+	private static String url = "jdbc:mysql://localhost:3306/PESSOAS";
 	private static String user = "root";
 	private static String root = "root1234";
 	private static Connection connection;

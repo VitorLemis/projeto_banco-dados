@@ -1,6 +1,8 @@
 package Estudo_java;
 
 import javax.swing.JOptionPane;
+
+import DAO.AcessoMysql;
 import DAO.conexao;
 
 public class Eventos {
@@ -26,6 +28,7 @@ public class Eventos {
 		if (verificar.aprovardoIdade && verificar.aprovardoNome) {
 			dadosUser.setNome(MainWindow.fieldCadastrarNome.getText());
 			dadosUser.setIdade(Integer.parseInt(MainWindow.FieldCadastrarIdade.getText()));
+			AcessoMysql.setBancoDados(dadosUser.getNome(), dadosUser.getIdade());
 		}else {
 			JOptionPane.showMessageDialog(null, "Dados Invaliados !");
 		}

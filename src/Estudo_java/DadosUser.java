@@ -3,7 +3,7 @@ package Estudo_java;
 public class DadosUser {
 	private String nome;
 	private int idade;
-	DadosUser() {
+	public DadosUser() {
 		nome = null;
 		idade = 0;
 	}

@@ -100,6 +100,7 @@ public class MainWindow {
 		text_cadastrarNome.setBackground(Cor.WHITE.getCor());
 		text_cadastrarNome.setForeground(Cor.BLACK.getCor());
 		
+		fieldCadastrarNome.setText("Glauber");
 		fieldCadastrarNome.setBackground(Cor.WHITE.getCor());
 		fieldCadastrarNome.setFont(Fonts.FONT_2.getFont());
 		fieldCadastrarNome.setMaximumSize(new Dimension(400, 20));
@@ -112,6 +113,7 @@ public class MainWindow {
 		text_cadastrarIdade.setBackground(Cor.WHITE.getCor());
 		text_cadastrarIdade.setForeground(Cor.BLACK.getCor());
 		
+		FieldCadastrarIdade.setText("20");
 		FieldCadastrarIdade.setBackground(Cor.WHITE.getCor());
 		FieldCadastrarIdade.setFont(Fonts.FONT_2.getFont());
 		FieldCadastrarIdade.setMaximumSize(new Dimension(400, 20));
