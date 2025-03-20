@@ -47,6 +47,7 @@ public class VerificarDigitacao{
 	}
 	protected void verificar() {
 		thread = new Thread(new Runnable() {
+			@SuppressWarnings("static-access")
 			public void run() {
 				while(controler) {
 					try {
@@ -71,5 +72,9 @@ public class VerificarDigitacao{
 			}
 		});
 		thread.start();
+	}
+	protected void interruptThread() {
+		controler = false;
+		thread.interrupt();
 	}
 }

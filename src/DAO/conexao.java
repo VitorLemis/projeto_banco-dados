@@ -8,6 +8,7 @@ public class conexao {
 	private static String user = "root";
 	private static String root = "root1234";
 	private static Connection connection;
+	@SuppressWarnings("finally")
 	public static Connection conexaoJDBC() {
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");

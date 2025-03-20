@@ -20,7 +20,7 @@ public class MainWindow {
 	ActionListenerEvent eventos;
 	private JFrame janelaFrame;
 	private JPanel panel1;
-	private JPanel panel2;
+	protected static JPanel panel2;
 	private JPanel panel3;
 	private JPanel panel4;
 	private JLabel titulo;
@@ -29,8 +29,8 @@ public class MainWindow {
 	protected static JButton btnComfirm;
 	protected static JLabel text_cadastrarNome;
 	protected static JLabel text_cadastrarIdade;
-	protected static TextField  fieldCadastrarNome;
-	protected static TextField FieldCadastrarIdade;
+	public static TextField  fieldCadastrarNome;
+	public static TextField FieldCadastrarIdade;
 	
 	MainWindow() {
 		eventos =  new ActionListenerEvent();
@@ -99,12 +99,14 @@ public class MainWindow {
 		text_cadastrarNome.setOpaque(true);
 		text_cadastrarNome.setBackground(Cor.WHITE.getCor());
 		text_cadastrarNome.setForeground(Cor.BLACK.getCor());
+		text_cadastrarNome.setVisible(false);
 		
-		fieldCadastrarNome.setText("Glauber");
+		//fieldCadastrarNome.setText("Glauber");
 		fieldCadastrarNome.setBackground(Cor.WHITE.getCor());
 		fieldCadastrarNome.setFont(Fonts.FONT_2.getFont());
 		fieldCadastrarNome.setMaximumSize(new Dimension(400, 20));
 		fieldCadastrarNome.setForeground(Cor.BLACK.getCor());
+		fieldCadastrarNome.setVisible(false);
 		
 		text_cadastrarIdade.setText("CADASTRAR IDADE");
 		text_cadastrarIdade.setHorizontalAlignment(SwingConstants.CENTER);
@@ -112,12 +114,14 @@ public class MainWindow {
 		text_cadastrarIdade.setOpaque(true);
 		text_cadastrarIdade.setBackground(Cor.WHITE.getCor());
 		text_cadastrarIdade.setForeground(Cor.BLACK.getCor());
+		text_cadastrarIdade.setVisible(false);
 		
-		FieldCadastrarIdade.setText("20");
+		//FieldCadastrarIdade.setText("20");
 		FieldCadastrarIdade.setBackground(Cor.WHITE.getCor());
 		FieldCadastrarIdade.setFont(Fonts.FONT_2.getFont());
 		FieldCadastrarIdade.setMaximumSize(new Dimension(400, 20));
 		FieldCadastrarIdade.setForeground(Cor.BLACK.getCor());
+		FieldCadastrarIdade.setVisible(false);
 		
 		btnComfirm.setText("Comfirmar");
 		btnComfirm.setFocusPainted(false);
@@ -129,6 +133,7 @@ public class MainWindow {
 				BorderFactory.createEmptyBorder(5, 5, 5, 5)));
 		btnComfirm.setHorizontalAlignment(SwingConstants.CENTER);
 		btnComfirm.addActionListener(eventos);
+		btnComfirm.setVisible(false);
 		
 		panel2.setLayout(new BoxLayout(panel2, BoxLayout.PAGE_AXIS));
 		panel2.setBackground(Cor.WHITE.getCor());
